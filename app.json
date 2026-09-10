@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Pallanguzhi",
+    "slug": "pallanguzhi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#2E1A0F",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#2E1A0F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.pallanguzhi.game",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.pallanguzhi.game",
+      "supportsTablet": true
+    }
+  }
+}
