@@ -1,3 +1,4 @@
+// Board UI: renders 14 pits on a carved wooden board
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
