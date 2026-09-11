@@ -1,3 +1,4 @@
+// Verandah scene: full SVG illustration — mango tree, paddy fields, brass vessels, kolam floor
 import React from 'react';
 import Svg, {
   Circle,
