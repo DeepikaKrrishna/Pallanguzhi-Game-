@@ -1,3 +1,4 @@
+// Game over screen: shows winner, scores and closing dialogue
 import React, { useEffect, useMemo, useRef } from 'react';
 import { Animated, Easing, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import GameButton from '../components/GameButton';
