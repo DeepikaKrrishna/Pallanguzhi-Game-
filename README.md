@@ -1,4 +1,4 @@
-# Pallanguzhi (பல்லாங்குழி)
+# \# Pallanguzhi (பல்லாங்குழி) — Version 1.0.0
 
 A traditional Tamil game, reimagined for mobile.
 
@@ -7,43 +7,43 @@ centuries. This is an offline Android/iOS version built with React Native,
 Expo and TypeScript, with the rules kept in a standalone game engine and the
 board rendered as a wooden slab of fourteen pits.
 
----
+\---
 
 ## Features
 
-- Full Pallanguzhi gameplay with relay sowing and two capture rules
-- Two players on one device, no account and no network
-- Players type their own name and build their own face: girl or boy, five skin
-  tones, six outfit colours, three hairstyles each
-- A hand that travels the board and tips open to drop each shell
-- An opening conversation that teaches the rules as talk rather than a manual
-- In-game banter on a worthwhile capture
-- Seeds thrown pit to pit along an arc, so a whole move can be followed by eye
-- Carved board with lit rims, breathing halos on playable pits and capture flashes
-- Kolam patterns drawn as vector art, on the floor and inlaid in the board
-- Traditional Tamil visual identity: rosewood, brass and cowrie tones
-- Live score tracking with an active-player indicator
-- Local game history stored on the device with AsyncStorage
-- Works entirely offline; nothing is fetched at runtime
+* Full Pallanguzhi gameplay with relay sowing and two capture rules
+* Two players on one device, no account and no network
+* Players type their own name and build their own face: girl or boy, five skin
+tones, six outfit colours, three hairstyles each
+* A hand that travels the board and tips open to drop each shell
+* An opening conversation that teaches the rules as talk rather than a manual
+* In-game banter on a worthwhile capture
+* Seeds thrown pit to pit along an arc, so a whole move can be followed by eye
+* Carved board with lit rims, breathing halos on playable pits and capture flashes
+* Kolam patterns drawn as vector art, on the floor and inlaid in the board
+* Traditional Tamil visual identity: rosewood, brass and cowrie tones
+* Live score tracking with an active-player indicator
+* Local game history stored on the device with AsyncStorage
+* Works entirely offline; nothing is fetched at runtime
 
----
+\---
 
 ## Technology stack
 
-| Layer | Choice |
-| --- | --- |
-| Framework | React Native (Expo SDK 51) |
-| Language | TypeScript, strict mode |
-| Navigation | React Navigation, native stack |
-| Styling | React Native StyleSheet, expo-linear-gradient |
-| Vector art | react-native-svg (kolam patterns) |
-| Storage | AsyncStorage |
-| Animation | React Native Animated API |
-| Version control | Git and GitHub |
+|Layer|Choice|
+|-|-|
+|Framework|React Native (Expo SDK 51)|
+|Language|TypeScript, strict mode|
+|Navigation|React Navigation, native stack|
+|Styling|React Native StyleSheet, expo-linear-gradient|
+|Vector art|react-native-svg (kolam patterns)|
+|Storage|AsyncStorage|
+|Animation|React Native Animated API|
+|Version control|Git and GitHub|
 
 No backend, no cloud database, no authentication, no external APIs.
 
----
+\---
 
 ## Installation
 
@@ -78,7 +78,7 @@ eas build -p android --profile preview
 This produces an installable `.apk`. A production build for the Play Store
 uses `--profile production`.
 
----
+\---
 
 ## Project structure
 
@@ -102,13 +102,13 @@ The `src/game` folder holds the entire rule set and knows nothing about React.
 Screens read state from it and render it; they never decide a rule. That split
 is what makes the rules testable and the UI replaceable.
 
-- `gameState.ts` — types, board setup, cloning helpers
-- `pallanguzhiRules.ts` — move validity, capture check, end conditions
-- `gameEngine.ts` — plays a whole turn, returns the new state plus the ordered
-  events the screen replays as animation
-- `scoring.ts` — score updates, end-of-game sweep, winner decision
+* `gameState.ts` — types, board setup, cloning helpers
+* `pallanguzhiRules.ts` — move validity, capture check, end conditions
+* `gameEngine.ts` — plays a whole turn, returns the new state plus the ordered
+events the screen replays as animation
+* `scoring.ts` — score updates, end-of-game sweep, winner decision
 
----
+\---
 
 ## Game rules as implemented
 
@@ -138,7 +138,7 @@ Pallanguzhi has many regional variants. This version implements one coherent
 rule set rather than mixing them, which is why the rules live in one module —
 a variant can be added by swapping `pallanguzhiRules.ts`.
 
----
+\---
 
 ## Version control workflow
 
@@ -165,10 +165,10 @@ Updated README documentation
 
 Feature work happens on a branch (`feature/<name>`), is merged into `main`
 through a pull request, and `main` stays in a running state at all times.
-`node_modules`, build output, IDE settings and keystores are excluded by
+`node\_modules`, build output, IDE settings and keystores are excluded by
 `.gitignore` and never committed.
 
----
+\---
 
 ## Players and story
 
@@ -203,7 +203,7 @@ sown rather than over its centre, which keeps the shells countable while the
 move plays out. On very long relay chains, where the per-seed pace drops below
 90 ms, the thrown seed is skipped and only the hand moves.
 
----
+\---
 
 ## Visual layer
 
@@ -228,7 +228,7 @@ the board never turns into a blur.
 Everything animated uses the native driver (transform and opacity only), which
 keeps the sowing smooth while React re-renders the seed counts underneath.
 
----
+\---
 
 ## Testing checklist
 
@@ -240,8 +240,9 @@ Touch: no input accepted while seeds are being sown; no double moves.
 Performance: animation stays smooth on a mid-range Android device; the board
 scales without overflow from a 320 dp screen upward.
 
----
+\---
 
 ## License
 
 Released for educational and cultural-preservation purposes.
+
