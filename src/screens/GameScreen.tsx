@@ -1,3 +1,4 @@
+// Game screen: wires the engine to the board, handles turns and animations
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Alert, Animated, Easing, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import GameButton from '../components/GameButton';
