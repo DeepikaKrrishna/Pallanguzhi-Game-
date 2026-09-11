@@ -1,3 +1,4 @@
+// Avatars: player-built faces — gender, skin tone, outfit and hairstyle
 /**
  * A player builds their own face rather than choosing from a cast. Nothing
  * here touches the rules — appearance is appearance, and the game is decided
