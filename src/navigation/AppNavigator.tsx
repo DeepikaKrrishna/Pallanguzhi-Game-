@@ -1,3 +1,4 @@
+// Navigation: defines all screens and transitions for the app
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import {
