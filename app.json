@@ -10,7 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#2E1A0F"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "android": {
       "package": "com.pallanguzhi.game",
       "versionCode": 1
@@ -18,6 +20,11 @@
     "ios": {
       "bundleIdentifier": "com.pallanguzhi.game",
       "supportsTablet": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9e055be2-bcb8-4def-9687-305175604086"
+      }
     }
   }
 }
