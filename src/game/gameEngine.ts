@@ -1,3 +1,4 @@
+// Game engine: resolves turns, returns state and animation events
 import {
   CAPTURE_COUNT,
   MAX_STEPS_PER_TURN,
