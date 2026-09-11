@@ -1,3 +1,4 @@
+// FlyingSeed: animates a shell travelling along an arc between two pits
 import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, StyleSheet } from 'react-native';
 import Seed from './Seed';
